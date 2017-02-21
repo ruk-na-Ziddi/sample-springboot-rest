@@ -6,3 +6,6 @@ sample.*
 .idea
 .vagrant
 build
+sample-springboot-rest.iml
+sample-springboot-rest.ipr
+sample-springboot-rest.iws
