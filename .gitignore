@@ -3,3 +3,6 @@
 gradle/
 out/
 sample.*
+.idea
+.vagrant
+build

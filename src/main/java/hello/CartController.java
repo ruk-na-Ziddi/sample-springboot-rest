@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 
 @RestController
+@RequestMapping("/api")
 public class CartController {
 
     private HashMap<Integer, Cart> carts = new HashMap<>();
