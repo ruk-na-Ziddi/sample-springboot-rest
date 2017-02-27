@@ -21,6 +21,12 @@ repositories {
     mavenCentral()
 }
 
+dependencyManagement {
+    imports {
+        mavenBom 'com.amazonaws:aws-java-sdk-bom:1.11.36'
+    }
+}
+
 dependencies {
     compile 'org.projectlombok:lombok:1.12.6'
     testCompile group: 'junit', name: 'junit'
@@ -29,4 +35,5 @@ dependencies {
     }
     compile("org.springframework.boot:spring-boot-starter-jetty")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile 'com.amazonaws:aws-java-sdk-s3'
 }

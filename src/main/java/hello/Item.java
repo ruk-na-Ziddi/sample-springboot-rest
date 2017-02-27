@@ -8,12 +8,13 @@ import lombok.Getter;
 import serialize.LocalDateDeserializer;
 import serialize.LocalDateSerializer;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @AllArgsConstructor
 @Getter
 @EqualsAndHashCode
-public class Item {
+public class Item implements Serializable{
     private String name;
     private Double price;
 

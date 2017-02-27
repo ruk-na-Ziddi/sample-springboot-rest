@@ -1,9 +1,10 @@
 package hello;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashMap;
 
-public class Cart {
+public class Cart implements Serializable{
     private HashMap<Item, Integer> items;
     private Integer id;
 
